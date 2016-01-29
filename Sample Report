@@ -1,0 +1,18 @@
+### Begin: Hive replications ###
+Status		Start					End						DB				Message
+Succeeded	2016-01-28 18:40:00 	2016-01-28 19:13:11 	database1		Hive Replication Finished Successfully.
+...
+****Failed	2016-01-28 08:00:00 	2016-01-28 10:11:44 	database2		HDFS replication command failed.
+...
+Running		2016-01-28 19:00:00 							database3		
+
+### Begin: HDFS replications ###
+Status		Start					End						Path				Message							Files Expected	Files Copied	Files Skipped	Files Failed
+Succeeded	2016-01-09 02:00:00 	2016-01-09 05:08:55 	/hdfs/path/1		HDFS replication succeeded.		63709			20884			42825			0
+...
+Running		2016-01-09 22:00:00 							/hdfs/path/2										8041154			23				2342			0
+...
+****Failed	2016-01-08 22:00:00 	2016-01-08 23:25:22 	/hdfs/path/3		HDFS replication command failed.734146			12557			721588			1
+...
+
+Current Time on hostname is 2016-01-29 00:02:01.702684
